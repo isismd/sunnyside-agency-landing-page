@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 1.8rem;
+  font-family: 'Barlow', sans-serif;
+  font-family: 'Fraunces', serif;
+}
+
+header {
+  background-image: url(../assets/images/desktop/image-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white;
+}
+
+header .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 15vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 3rem;
+  margin-top: 0;
+}
+
+header .logo img {
+  height: 4vh;
+}
+
+header .navbar-menu {
+  text-align: right;
+  width: auto;
+  font-family: 'Barlow', sans-serif;
+}
+
+header .navbar-menu li {
+  float: left;
+  list-style-type: none;
+  margin-right: 1.5rem;
+  padding: 1.5rem 2.5rem;
+  cursor: pointer;
+}
+
+header .navbar-menu li:hover {
+  border-radius: 3rem;
+  background-color: #6dceff;
+}
+
+header .title {
+  text-align: center;
+  font-size: 2.5rem;
+  letter-spacing: 0.8rem;
+  line-height: 15rem;
+}
+/*# sourceMappingURL=main.css.map */
