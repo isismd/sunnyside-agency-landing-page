@@ -70,4 +70,110 @@ header .title {
   letter-spacing: 0.8rem;
   line-height: 15rem;
 }
+
+.container .box-1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  text-align: left;
+  height: auto;
+}
+
+.container .box-1 .text {
+  padding: 20%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.container .box-1 h2 {
+  color: #23303e;
+  font-weight: 800;
+  font-size: 4rem;
+}
+
+.container .box-1 p {
+  font-family: 'Barlow', sans-serif;
+  color: #818498;
+  padding: 3rem 0;
+}
+
+.container .box-1 .learn-more {
+  font-size: 1.8rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.container .box-1 #learn-more-1 {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, rgba(255, 255, 255, 0)), color-stop(50%, #fff099));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, #fff099 50%);
+}
+
+.container .box-1 #learn-more-1:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, rgba(255, 255, 255, 0)), color-stop(50%, #ffd900));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, #ffd900 50%);
+}
+
+.container .box-1 .picture-1 {
+  background-image: url(../assets/images/desktop/image-transform.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.container .box-2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  text-align: left;
+  height: auto;
+}
+
+.container .box-2 .text {
+  padding: 20%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.container .box-2 h2 {
+  color: #23303e;
+  font-weight: 800;
+  font-size: 4rem;
+}
+
+.container .box-2 p {
+  font-family: 'Barlow', sans-serif;
+  color: #818498;
+  padding: 3rem 0;
+}
+
+.container .box-2 .learn-more {
+  font-size: 1.8rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.container .box-2 #learn-more-2 {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, rgba(255, 255, 255, 0)), color-stop(50%, #ffd2cc));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, #ffd2cc 50%);
+}
+
+.container .box-2 #learn-more-2:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, rgba(255, 255, 255, 0)), color-stop(50%, #fe7867));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, #fe7867 50%);
+}
+
+.container .box-2 .picture-2 {
+  background-image: url(../assets/images/desktop/image-stand-out.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 /*# sourceMappingURL=main.css.map */
