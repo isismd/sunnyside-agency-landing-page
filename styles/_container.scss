@@ -1,0 +1,75 @@
+@mixin box-config() {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: left;
+    height: auto;
+}
+
+@mixin text-config () {
+    .text {
+        padding: 20%;
+        align-content: center;
+    }
+
+    h2 {
+        color: hsl(212, 27%, 19%);
+        font-weight: 800;
+        font-size: 4rem;
+    }
+
+    p {
+        font-family: 'Barlow', sans-serif;
+        color: hsl(232, 10%, 55%);
+        padding: 3rem 0;
+    }
+
+    .learn-more {
+        font-size: 1.8rem;
+        width: fit-content;
+        padding: 0.5rem;
+        cursor: pointer;
+    }
+}
+
+.container {
+    .box-1 {
+        @include box-config();
+        @include text-config();
+        #learn-more-1 {
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, hsl(51, 100%, 80%) 50%);
+        }
+
+        #learn-more-1:hover {
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, hsl(51, 100%, 50%) 50%);
+        }
+
+        .picture-1 {
+            background-image: url(../assets/images/desktop/image-transform.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+    }
+
+    .box-2 {
+        @include box-config();
+        @include text-config();
+        #learn-more-2 {
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, hsl(7, 99%, 90%) 50%);
+        }
+
+        #learn-more-2:hover {
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, hsl(7, 99%, 70%) 50%);
+        }
+
+        .picture-2 {
+            background-image: url(../assets/images/desktop/image-stand-out.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        
+    }
+
+}
