@@ -8,6 +8,22 @@
 html {
   font-size: 62.5%;
   overflow-x: hidden;
+  overflow: overlay;
+}
+
+html ::-webkit-scrollbar {
+  width: 2.2vh;
+}
+
+html ::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+}
+
+html ::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.4);
+  border: .15em solid #c4c7cc / 1;
+  border-radius: 100vw;
 }
 
 body {
