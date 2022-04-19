@@ -1,3 +1,4 @@
+// BASE // 
 * {
     margin: 0;
     padding: 0;
@@ -14,4 +15,103 @@ body {
     font-size: 1.8rem;
     font-family: 'Barlow', sans-serif;
     font-family: 'Fraunces', serif;
+}
+
+// MIXIN CONFIGS // 
+@mixin background-config {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@mixin box-config($align: true) {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100%;
+
+    @if $align {
+        text-align: left;
+    }
+
+    @else {
+        text-align: center;
+    }
+
+}
+
+@mixin text-config($main: true) {
+    p {
+        font-family: 'Barlow', sans-serif;
+        padding: 3rem 0;
+    }
+
+    @if $main {
+        .text {
+            padding: 18%;
+            align-content: center;
+        }
+
+        .learn-more {
+            font-size: 1.8rem;
+
+            width: fit-content;
+            padding: 0.5rem;
+            cursor: pointer;
+        }
+
+        h2 {
+            color: hsl(212, 27%, 19%);
+            font-weight: 800;
+            font-size: 4rem;
+        }
+
+        p {
+            color: hsl(232, 10%, 55%);
+            ;
+        }
+    }
+
+    @else {
+        .text-2 {
+            height: 60rem;
+            padding: 20%;
+            padding-top: 40rem;
+            vertical-align: bottom;
+
+        }
+        h3 {
+            font-size: 3rem;
+            font-weight: 800;
+        }
+
+    }
+}
+
+@mixin review-config() {
+
+    img {
+        width: 8rem;
+        border-radius: 50%;
+    }
+
+    .review-text {
+
+        font-family: 'Barlow', sans-serif;
+        padding-top: 18%;
+        padding-bottom: 18%;
+        color: hsl(213, 9%, 39%);
+    }
+
+    .name {
+        color:hsl(212, 27%, 19%);
+        font-weight: 800;
+        padding: 1rem;
+    }
+
+    .job {
+        color: hsl(232, 10%, 55%);
+        font-family: 'Barlow', sans-serif;
+        font-size: 1.5rem;
+    }
+    
 }
