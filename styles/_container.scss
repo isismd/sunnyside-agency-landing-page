@@ -1,40 +1,10 @@
-@mixin box-config() {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    text-align: left;
-    height: auto;
-}
-
-@mixin text-config () {
-    .text {
-        padding: 20%;
-        align-content: center;
-    }
-
-    h2 {
-        color: hsl(212, 27%, 19%);
-        font-weight: 800;
-        font-size: 4rem;
-    }
-
-    p {
-        font-family: 'Barlow', sans-serif;
-        color: hsl(232, 10%, 55%);
-        padding: 3rem 0;
-    }
-
-    .learn-more {
-        font-size: 1.8rem;
-        width: fit-content;
-        padding: 0.5rem;
-        cursor: pointer;
-    }
-}
+// CONTAINER //
 
 .container {
     .box-1 {
-        @include box-config();
-        @include text-config();
+        @include box-config(true);
+        @include text-config(true);
+
         #learn-more-1 {
             background: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, hsl(51, 100%, 80%) 50%);
         }
@@ -44,17 +14,16 @@
         }
 
         .picture-1 {
+            @include background-config();
             background-image: url(../assets/images/desktop/image-transform.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
         }
 
     }
 
     .box-2 {
-        @include box-config();
-        @include text-config();
+        @include box-config(true);
+        @include text-config(true);
+
         #learn-more-2 {
             background: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, hsl(7, 99%, 90%) 50%);
         }
@@ -64,12 +33,29 @@
         }
 
         .picture-2 {
+            @include background-config();
             background-image: url(../assets/images/desktop/image-stand-out.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
         }
-        
+
     }
+
+    .box-3 {
+        @include box-config(false);
+        @include text-config(false);
+
+        .graphic-design {
+            @include background-config();
+            background-image: url(../assets/images/desktop/image-graphic-design.jpg);
+            color: hsl(167, 40%, 24%);
+        }
+
+        .photography {
+            @include background-config();
+            background-image: url(../assets/images/desktop/image-photography.jpg);
+            color: hsl(198, 62%, 26%);
+        }
+
+    }
+
 
 }
