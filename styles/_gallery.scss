@@ -1,0 +1,24 @@
+// GALLERY //
+
+.gallery {
+    width: 100vw;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    .img1 {
+        background-image: url(../assets/images/desktop/image-gallery-milkbottles.jpg) ;
+        @include background-config();
+    }
+    .img2 {
+        background-image: url(../assets/images/desktop/image-gallery-orange.jpg) ;
+        @include background-config();
+    }
+    .img3 {
+        background-image: url(../assets/images/desktop/image-gallery-cone.jpg) ;
+        @include background-config();
+    }
+    .img4 {
+        background-image: url(../assets/images/desktop/image-gallery-sugarcubes.jpg) ;
+        @include background-config();
+    }
+}
