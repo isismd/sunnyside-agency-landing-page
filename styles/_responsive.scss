@@ -1,12 +1,7 @@
 // MEDIA QUERIES// 
 
 
-@media (max-width: 790px) {
-
-    html {
-        font-size: 50%;
-    }
-    
+@media (max-width: 790px) { 
     .testimonials {
         display: block;
 
@@ -49,6 +44,10 @@
 }
 
 @media (max-width: 710px) {
+    html {
+        font-size: 50%;
+    }
+        
     header {
         .logo img {
             height: 5vh;

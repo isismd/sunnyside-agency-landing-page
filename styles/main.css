@@ -357,9 +357,6 @@ footer .attribution {
 }
 
 @media (max-width: 790px) {
-  html {
-    font-size: 50%;
-  }
   .testimonials {
     display: block;
   }
@@ -452,6 +449,9 @@ footer .attribution {
 }
 
 @media (max-width: 710px) {
+  html {
+    font-size: 50%;
+  }
   header {
     /* menu configs */
     /* open menu */
