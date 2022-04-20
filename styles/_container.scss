@@ -2,8 +2,8 @@
 
 .container {
     .box-1 {
-        @include box-config(true);
         @include text-config(true);
+        height: 100%;
 
         #learn-more-1 {
             background: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, hsl(51, 100%, 80%) 50%);
@@ -21,8 +21,8 @@
     }
 
     .box-2 {
-        @include box-config(true);
         @include text-config(true);
+        height: 100%;
 
         #learn-more-2 {
             background: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, hsl(7, 99%, 90%) 50%);
@@ -40,8 +40,9 @@
     }
 
     .box-3 {
-        @include box-config(false);
+
         @include text-config(false);
+        height: 100%;
 
         .graphic-design {
             @include background-config();
