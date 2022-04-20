@@ -7,23 +7,6 @@
 
 html {
   font-size: 62.5%;
-  overflow-x: hidden;
-  overflow: overlay;
-}
-
-html ::-webkit-scrollbar {
-  width: 2.2vh;
-}
-
-html ::-webkit-scrollbar-track {
-  background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 20px;
-}
-
-html ::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.4);
-  border: .15em solid #c4c7cc / 1;
-  border-radius: 100vw;
 }
 
 body {
@@ -96,12 +79,7 @@ header .title {
 }
 
 .container .box-1 {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
   height: 100%;
-  text-align: left;
 }
 
 .container .box-1 p {
@@ -152,12 +130,7 @@ header .title {
 }
 
 .container .box-2 {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
   height: 100%;
-  text-align: left;
 }
 
 .container .box-2 p {
@@ -208,12 +181,7 @@ header .title {
 }
 
 .container .box-3 {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
   height: 100%;
-  text-align: center;
 }
 
 .container .box-3 p {
@@ -386,5 +354,225 @@ footer .social img:hover {
 
 footer .attribution {
   font-size: 1.2rem;
+}
+
+html {
+  font-size: 50%;
+}
+
+@media (max-width: 790px) {
+  .testimonials {
+    display: block;
+  }
+  .testimonials .reviews {
+    display: block;
+  }
+  .testimonials .reviews .review-1 img,
+  .testimonials .reviews .review-2 img,
+  .testimonials .reviews .review-3 img {
+    width: 8rem;
+    border-radius: 50%;
+  }
+  .testimonials .reviews .review-1 .review-text,
+  .testimonials .reviews .review-2 .review-text,
+  .testimonials .reviews .review-3 .review-text {
+    font-family: 'Barlow', sans-serif;
+    padding-top: 18%;
+    padding-bottom: 18%;
+    color: #5a636c;
+  }
+  .testimonials .reviews .review-1 .name,
+  .testimonials .reviews .review-2 .name,
+  .testimonials .reviews .review-3 .name {
+    color: #23303e;
+    font-weight: 800;
+    padding: 1rem;
+  }
+  .testimonials .reviews .review-1 .job,
+  .testimonials .reviews .review-2 .job,
+  .testimonials .reviews .review-3 .job {
+    color: #818498;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.5rem;
+  }
+  .testimonials .reviews .review-1 .review-text,
+  .testimonials .reviews .review-2 .review-text,
+  .testimonials .reviews .review-3 .review-text {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  .testimonials .reviews .review-1 .job,
+  .testimonials .reviews .review-2 .job,
+  .testimonials .reviews .review-3 .job {
+    padding-bottom: 2.5rem;
+  }
+  .gallery {
+    width: 100vw;
+    height: 90vh;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+  }
+}
+
+@media (min-width: 710px) {
+  html {
+    overflow-x: hidden;
+    overflow: overlay;
+  }
+  html ::-webkit-scrollbar {
+    width: 2.2vh;
+  }
+  html ::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+  }
+  html ::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.4);
+    border: .15em solid #c4c7cc / 1;
+    border-radius: 100vw;
+  }
+  .container .box-1,
+  .container .box-2 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    height: 100%;
+    text-align: left;
+  }
+  .container .box-3 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    height: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 710px) {
+  header {
+    /* menu configs */
+    /* open menu */
+  }
+  header .logo img {
+    height: 5vh;
+  }
+  header .title {
+    line-height: 10rem;
+    padding-top: 5rem;
+  }
+  header .navbar-menu {
+    display: none;
+  }
+  header .one,
+  header .two,
+  header .three {
+    background-color: white;
+    width: 100%;
+    height: 0.2rem;
+    margin: 0.3rem auto;
+  }
+  header .menu-toggle {
+    width: 3rem;
+    height: 4rem;
+  }
+  header .nav-bar.on {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 40vh;
+    width: 90vw;
+    margin: 5%;
+    margin-top: 15rem;
+    background-color: white;
+  }
+  header .nav-bar.on .nav-bar-triangle {
+    position: absolute;
+    right: 0;
+    top: -3.5rem;
+    border-bottom: 4rem solid white;
+    border-left: 4rem solid transparent;
+  }
+  header .nav-bar.on .navbar-menu {
+    display: block;
+    color: #818498;
+  }
+  header .nav-bar.on .navbar-menu .contact {
+    background-color: #fad400;
+  }
+  header .nav-bar.on .navbar-menu .contact:hover {
+    background-color: black;
+    color: white;
+  }
+  header .nav-bar.on .navbar-menu li:hover {
+    background-color: white;
+    color: #818498;
+  }
+  header .nav-bar.on .navbar-menu ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 15%;
+  }
+  header .nav-bar.on .navbar-menu li {
+    text-align: center;
+    display: block;
+    float: unset;
+    padding-bottom: 2.5rem;
+    margin-right: 0;
+  }
+  .container .box-1,
+  .container .box-2,
+  .container .box-3 {
+    text-align: center;
+  }
+  .container .box-1 .learn-more,
+  .container .box-2 .learn-more,
+  .container .box-3 .learn-more {
+    width: auto;
+    margin-left: 32%;
+    margin-right: 32%;
+  }
+  .container .box-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .container .picture-1 {
+    height: 90vh;
+  }
+  .container .picture-2 {
+    height: 90vh;
+  }
+}
+
+@media (max-width: 540px) {
+  header .logo img {
+    height: 3.5vh;
+  }
+  header .title {
+    font-size: 3rem;
+    line-height: 6rem;
+  }
+  header .title img {
+    padding-top: 10rem;
+  }
+  .container .picture-1 {
+    height: 60vh;
+  }
+  .container .picture-2 {
+    height: 60vh;
+  }
+  footer li {
+    float: unset;
+    padding: 1rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
