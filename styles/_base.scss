@@ -7,24 +7,6 @@
 
 html {
     font-size: 62.5%;
-    // SCROLLBAR CONFIGS //
-    overflow-x: hidden;
-    overflow: overlay;
-    ::-webkit-scrollbar{
-        width: 2.2vh;
-    }
-    
-    ::-webkit-scrollbar-track {
-        background-color:rgba(255,255,255,0.5);
-        border-radius: 20px;
-    }
-    
-    ::-webkit-scrollbar-thumb {
-        background: rgba(0,0,0,0.4);
-        border: .15em solid #c4c7cc / 1;
-        border-radius: 100vw;
-        
-    }
 }
 
 body {
@@ -32,7 +14,7 @@ body {
     font-size: 1.8rem;
     font-family: 'Barlow', sans-serif;
     font-family: 'Fraunces', serif;
-    
+
 }
 
 // MIXIN CONFIGS // 
@@ -97,6 +79,7 @@ body {
             vertical-align: bottom;
 
         }
+
         h3 {
             font-size: 3rem;
             font-weight: 800;
@@ -105,7 +88,7 @@ body {
     }
 }
 
-@mixin review-config() {
+@mixin review-config($responsive: true) {
 
     img {
         width: 8rem;
@@ -121,7 +104,7 @@ body {
     }
 
     .name {
-        color:hsl(212, 27%, 19%);
+        color: hsl(212, 27%, 19%);
         font-weight: 800;
         padding: 1rem;
     }
@@ -131,5 +114,37 @@ body {
         font-family: 'Barlow', sans-serif;
         font-size: 1.5rem;
     }
-    
+
+    @if $responsive {
+        .review-text {
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+        }
+
+        .job {
+            padding-bottom: 2.5rem;
+        }
+    }
+
+}
+
+@mixin scrollbar-config(){
+    overflow-x: hidden;
+    overflow: overlay;
+
+    ::-webkit-scrollbar {
+        width: 2.2vh;
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 20px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: rgba(0, 0, 0, 0.4);
+        border: .15em solid #c4c7cc / 1;
+        border-radius: 100vw;
+
+    }
 }
