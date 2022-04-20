@@ -17,7 +17,7 @@
     }
 
     .review-1, .review-2, .review-3 {
-        @include review-config();
+        @include review-config(false);
         padding: 2.5%;
     }
 
