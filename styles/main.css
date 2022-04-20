@@ -356,11 +356,10 @@ footer .attribution {
   font-size: 1.2rem;
 }
 
-html {
-  font-size: 50%;
-}
-
 @media (max-width: 790px) {
+  html {
+    font-size: 50%;
+  }
   .testimonials {
     display: block;
   }
