@@ -1,10 +1,12 @@
 // MEDIA QUERIES// 
 
-html {
-    font-size: 50%;
-}
 
 @media (max-width: 790px) {
+
+    html {
+        font-size: 50%;
+    }
+    
     .testimonials {
         display: block;
 
